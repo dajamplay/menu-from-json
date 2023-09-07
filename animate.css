@@ -1,0 +1,84 @@
+/* Animation */
+:root {
+    --speed: 0.7s;
+}
+
+/* Slide Left */
+.animate--slide--left {
+    animation: slide--left var(--speed) ease;
+}
+
+@keyframes slide--left {
+    0% {left: 15px;}
+    100% {left: -100vw;}
+}
+
+/* Slide Right */
+.animate--slide--right {
+    animation: slide--right var(--speed) ease;
+}
+
+@keyframes slide--right {
+    0% {left: 15px;}
+    100% {left: 200vw;}
+}
+
+/* Slide in */
+.animate--slide--in {
+    animation: slide--in var(--speed) ease;
+    animation-iteration-count: 1;
+}
+
+@keyframes slide--in {
+    0% {left: -100vw;}
+    100% {left: 15px;}
+}
+
+/*Fade In*/
+.animate--fade--in {
+    animation: fade--in var(--speed) ease;
+}
+
+@keyframes fade--in {
+    0% {opacity: 0;}
+    100% {opacity: 100%;}
+}
+
+/* Fade Out */
+.animate--fade--out {
+    animation: fade--out var(--speed) ease;
+}
+
+@keyframes fade--out {
+    0% {opacity: 100%;}
+    100% {opacity: 0;}
+}
+
+/* Menu Open */
+
+.animate--menu--open {
+    animation: menu--open .7s ease;
+}
+
+@keyframes menu--open {
+    0% {
+        left: -100vw;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+/* Menu Close */
+.animate--menu--close {
+    animation: menu--close .7s ease;
+}
+
+@keyframes menu--close {
+    0% {
+        left: 0vw;
+    }
+    100% {
+        left: -100vw;
+    }
+}

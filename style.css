@@ -1,0 +1,121 @@
+/*Colors vars*/
+:root {
+    --color-primary: #F3B524;
+    --color-bg: #204176;
+    --color-text-light: #FEFEFE;
+    --color-text-dark: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#menu {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: -100vw;
+    background-color: var(--color-bg);
+    width: 100vw;
+    min-height: 100vh;
+    padding: 15px;
+}
+
+.menu__open-button {
+    padding: 5px;
+    float: right;
+    background-color: var(--color-bg);
+    color: var(--color-text-light);
+    font-size: 2em;
+}
+
+.menu__close-menu-btn {
+    color: var(--color-primary);
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 1.2em;
+}
+
+.menu__close-menu-btn:hover {
+    cursor: pointer;
+}
+
+.menu__contacts-link{
+    color: var(--color-text-dark);
+    padding: 15px;
+    background-color: var(--color-primary);
+    font-size: 1.2em;
+    border-radius: 1em;
+}
+
+.menu__prev-link {
+    color: var(--color-primary);
+    margin: 15px 0 0 0;
+    font-size: 1.2em;
+    position: relative;
+}
+
+.menu__prev-link:hover {
+    cursor: pointer;
+}
+
+.menu__title {
+    position: relative;
+    margin: 15px 0;
+    left: 15px;
+    color: var(--color-text-light);
+    text-decoration: underline;
+    font-size: 1.6em;
+}
+
+.menu__list {
+    position: relative;
+    list-style-type: none;
+    left: -100vw;
+}
+
+.menu__list__item {
+    color: var(--color-text-light);
+    text-decoration: none;
+    font-size: 1.6em;
+}
+
+.menu__list__item__next-link {
+    cursor: pointer;
+    color: var(--color-text-light);
+    text-decoration: none;
+    font-size: 1.6em;
+}
+
+.display-none {
+    display: none;
+}
+
+/* Loading Menu */
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid var(--color-text-light);
+    border-bottom-color: var(--color-primary);
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
